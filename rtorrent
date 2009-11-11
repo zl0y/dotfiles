@@ -1,0 +1,32 @@
+# минимальное число пиров
+min_peers = 1
+
+# макс. число пиров
+max_peers = 1000
+
+# максимальная скорость
+download_rate = 0
+
+#максимальная скорость отдачи. 0 - не ограничена
+upload_rate = 0
+
+#каталог для сохранения закачек или откуда буду сидироваться торренты.
+directory = /home/user/rtorrent/download/
+
+#каталог куда будет сохраняться состояние торрентов.
+#Здесь, в этом примере, они сохраняются в папку  session
+session = /home/user/rtorrent/session/
+
+#rtorrent каждые 5 секунд проверяет этот каталог на новые *.torrent файлы
+#и если они есть то ставит их на закачку
+schedule = watch_directory,5,5,load_start=/home/user/rtorrent/torrent_auto_load/*.torrent
+
+# сохранять сессию
+session_save = yes
+
+# проверять хэш торрента после закачки
+check_hash = yes
+
+# использовать udp
+use_udp_trackers = yes
+
