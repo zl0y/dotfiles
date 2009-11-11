@@ -1,0 +1,52 @@
+" The following command will turn your status line into a true information bar
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+
+" This command will make sure that your status line is always shown as the
+" second last line in the editor window
+set laststatus=2
+
+" Enable str counting
+set nu
+
+" Change default number of colummns used for the line numbers
+set numberwidth=4
+
+" Highlight entire line another background color (:highlight CursorLine
+" guibg=lightblue ctermbg=lightgray)
+set cursorline
+
+" This command marks the current column the cursor is in by
+" set cursorcolumn
+
+" Show cursor position
+set ruler
+
+" 
+set incsearch
+
+" 
+set foldmethod=indent
+
+" Enable syntax highlighting
+syntax on
+
+" Enable _auto_indent
+set autoindent
+
+" FOR GUI (to find out what you can modify, look in :help 'guioptions'
+" To remove the menu completely
+set guioptions-=m
+
+" To remove the toolbar completely
+set guioptions-=T
+
+" space instead tab
+set expandtab
+
+" Size of tabulation
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+
+" Enable smart indent
+set smartindent
